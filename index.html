@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/Octocat.png">
+    <link rel="manifest" href="manifest.json">
+    <title>Driving</title>
+
+    <style>
+        body {
+            background-size: auto 100%;
+        }
+        
+        .car {
+            position: absolute;
+            bottom: 1%;
+            width: auto;
+            left: 10%;
+            background-repeat: repeat-y;
+            animation: moveCar 0.9s linear infinite;
+        }
+        
+        .bird {
+            position: top;
+            bottom: 500%;
+            display: block;
+            background-repeat: repeat-x;
+            animation: move 7s linear infinite;
+        }
+        
+        .cloud {
+            position: top;
+            display: block;
+            background-repeat: repeat-x;
+            animation: move 5s linear infinite;
+        }
+        
+        .day {
+            height: 550px;
+            width: auto;
+            background: url("./images/road.png");
+            position: relative;
+            left: 0;
+            overflow-x: hidden;
+            background-size: auto 100%;
+        }
+        
+        h1 {
+            padding-top: auto;
+            padding-left: 50px;
+        }
+        /*animation*/
+        
+        @keyframes move {
+            100% {
+                transform: translateX(+2900px)
+            }
+        }
+        
+        @keyframes moveCar {
+            100% {
+                transform: translateY(+2px)
+            }
+        }
+    </style>
+
+</head>
+
+<h1>Non-Stop Travel</h1>
+
+<body>
+
+    <div class="day">
+        <div class="cloud">
+            <img src="./images/cloud.png" alt="">
+        </div>
+        <div class="bird">
+            <img src="./images/bird.png" alt="">
+        </div>
+
+        <div class="car">
+            <img src="./images/car.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
